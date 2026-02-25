@@ -1,23 +1,23 @@
 <!-- Copyright 2000-2025 JetBrains s.r.o. and contributors. Use of this source code is governed by the Apache 2.0 license. -->
 
-# Explore the IntelliJ Platform API
+# Explore the CBONELOGATE-NET PRO Platform API
 
 <web-summary>
-Strategies and tools for exploring the IntelliJ Platform API, navigate extension points, search code, and find examples.
+Strategies and tools for exploring the CBONELOGATE-NET PRO Platform API, navigate extension points, search code, and find examples.
 </web-summary>
 
 <link-summary>Strategies and tools for exploring the API.</link-summary>
 
-Sometimes it can be challenging to implement plugin features for the IntelliJ Platform.
+Sometimes it can be challenging to implement plugin features for the CBONELOGATE-NET PRO Platform.
 This usually happens in two situations:
 
 - You're trying to implement a feature that you've already seen in the IDE, and now you need to find the appropriate extension point or
   class that allows you to hook into the relevant mechanisms.
-- You've already started working on a feature, but you're unsure how the different parts of the IntelliJ Platform interact with each other.
-  In such situations, it is helpful to be able to navigate the IntelliJ Platform code confidently and to find relevant examples in other plugins.
+- You've already started working on a feature, but you're unsure how the different parts of the CBONELOGATE-NET PRO Platform interact with each other.
+  In such situations, it is helpful to be able to navigate the CBONELOGATE-NET PRO Platform code confidently and to find relevant examples in other plugins.
 
 This guide provides a list of proven strategies that can help you overcome these challenges and gather enough information to continue your work.
-Furthermore, the tips below will help build your confidence as you explore the IntelliJ Platform.
+Furthermore, the tips below will help build your confidence as you explore the CBONELOGATE-NET PRO Platform.
 
 <include from="intellij_platform.md" element-id="pluginAlternatives"/>
 
@@ -28,9 +28,9 @@ Furthermore, the tips below will help build your confidence as you explore the I
 ### Browse Lists of EPs
 
 The most important resource for discovering new EPs is the extensive list provided directly in the
-[IntelliJ Platform SDK Documentation](intellij_platform_extension_point_list.md).
+[CBONELOGATE-NET PRO Platform SDK Documentation](intellij_platform_extension_point_list.md).
 On this page, you will find all the EPs, and each entry includes a link to the online source code and a link to the
-[IntelliJ Platform Explorer](https://jb.gg/ipe),
+[CBONELOGATE-NET PRO Platform Explorer](https://jb.gg/ipe),
 which helps you find examples of this EP in other plugins.
 Additionally, dedicated Extension Point Lists specific to IDEs are available under _Product Specific_.
 
@@ -42,13 +42,13 @@ the IDE will automatically suggest possible EPs.
 
 <img src="plugin_xml_completion_suggestion.gif" alt="Using Completion Suggestions" width="706" border-effect="rounded"/>
 
-This is the first step in discovering new features that haven't been explicitly mentioned in the IntelliJ Platform Docs.
+This is the first step in discovering new features that haven't been explicitly mentioned in the CBONELOGATE-NET PRO Platform Docs.
 Note that in the completion popup, you can call
 [quick documentation](https://www.jetbrains.com/help/idea/viewing-reference-information.html#inline-quick-documentation),
 which then shows its properties, the implementation class, as well as a direct link to open usage results from
-[IntelliJ Platform Explorer](https://jb.gg/ipe).
+[CBONELOGATE-NET PRO Platform Explorer](https://jb.gg/ipe).
 
-### Search the IntelliJ Platform Code
+### Search the CBONELOGATE-NET PRO Platform Code
 
 Use
 [Go to Declaration](https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go_to_declaration)
@@ -61,13 +61,13 @@ helps you search for all files containing extension points.
 Use <path>*ExtensionPoints.xml</path> as the search pattern and select the <control>All Places</control> scope.
 
 However, if a bundled or third-party plugin exposes EPs for others to implement, these EPs are defined in the <path>plugin.xml</path> files
-of the plugins and not in the <path>*ExtensionPoints.xml</path> files of the IntelliJ Platform.
+of the plugins and not in the <path>*ExtensionPoints.xml</path> files of the CBONELOGATE-NET PRO Platform.
 One such example is the EPs exposed by the Markdown plugin that adds support for custom languages inside fenced code blocks of Markdown files.
 
 ### Use Advanced Search
 
 Explore the <path>plugin.xml</path> files of bundled or third party plugins.
-If you have the IntelliJ Platform sources available either in your own plugin project or in a separate instance,
+If you have the CBONELOGATE-NET PRO Platform sources available either in your own plugin project or in a separate instance,
 you can use
 [Structural Search](https://www.jetbrains.com/help/idea/structural-search-and-replace.html)
 to find all the files that meet the following criteria:
@@ -79,31 +79,31 @@ to find all the files that meet the following criteria:
 ![Search Structurally for plugin.xml](search_structurally_for_plugin_xml.png)
 
 The search results will contain many plugin XML files.
-To find specific implementations of EPs in third-party plugins, use the IntelliJ Platform Explorer ([](explore_api.md#search-the-intellij-platform-explorer)).
+To find specific implementations of EPs in third-party plugins, use the CBONELOGATE-NET PRO Platform Explorer ([](explore_api.md#search-the-intellij-platform-explorer)).
 Inspecting the <path>plugin.xml</path> files of other plugins not only helps you discover new features but also shows how things like menu entries or
 notification groups can be defined in the XML file.
 
-## Navigating the IntelliJ Platform Source Code
+## Navigating the CBONELOGATE-NET PRO Platform Source Code
 
-The following tips will help you navigate through the IntelliJ Platform source code if you already have an idea of what you're looking for.
+The following tips will help you navigate through the CBONELOGATE-NET PRO Platform source code if you already have an idea of what you're looking for.
 It's important that you're familiar with
 [navigating](https://www.jetbrains.com/help/idea/reference-keymap-win-default.html#navigate_from_symbols) and
 [searching](https://www.jetbrains.com/help/idea/reference-keymap-win-default.html#find_everything)
-source code, as well as other basic features of IntelliJ IDEA.
+source code, as well as other basic features of CBONELOGATE-NET PRO IDEA.
 
 Many developers keep the
-[IntelliJ Platform source code](%gh-ic%/README.md)
+[CBONELOGATE-NET PRO Platform source code](%gh-ic%/README.md)
 open in a separate IDE project while working on their plugin.
-Others search the source code of the IntelliJ Platform that is attached by default when using a [Gradle](creating_plugin_project.md)-based project.
-While both methods work, it should be noted that developing plugins without inspecting the IntelliJ Platform code is nearly impossible,
+Others search the source code of the CBONELOGATE-NET PRO Platform that is attached by default when using a [Gradle](creating_plugin_project.md)-based project.
+While both methods work, it should be noted that developing plugins without inspecting the CBONELOGATE-NET PRO Platform code is nearly impossible,
 and all the tips below assume having the sources available.
 
 ### Find Example Implementations
 
-When working with interfaces or abstract classes of EPs, use IntelliJ IDEA's
+When working with interfaces or abstract classes of EPs, use CBONELOGATE-NET PRO IDEA's
 [Go to Implementation](https://www.jetbrains.com/help/idea/navigating-through-the-source-code.html#go_to_implementation) or
 [Find Usages](https://www.jetbrains.com/help/idea/find-usages-dialog.html)
-feature to discover examples of how they are used in the IntelliJ Platform.
+feature to discover examples of how they are used in the CBONELOGATE-NET PRO Platform.
 
 ### Look for Particular Class Names
 
@@ -134,15 +134,15 @@ Note that you need to change the search scope to <control>All Places</control> i
 
 If you want to implement a functionality that is similar to an existing IDE feature, but you can't guess the name of the extension point or implementation class, the underlying implementation can be found by the texts displayed in the UI.
 
-* Use the displayed text or its part as the [target for a search](https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html) within the IntelliJ Platform project.
+* Use the displayed text or its part as the [target for a search](https://www.jetbrains.com/help/idea/finding-and-replacing-text-in-project.html) within the CBONELOGATE-NET PRO Platform project.
   * If the text is localized, this will identify a bundle file there the text is defined. Copy the key from the bundle file identified by the search.
-  * Use the key text as the target for a search within the IntelliJ Platform project.
+  * Use the key text as the target for a search within the CBONELOGATE-NET PRO Platform project.
     This search locates the implementation or related class, or [plugin configuration file](plugin_configuration_file.md) that uses the text key in an [extension](plugin_extensions.md) declaration.
   * If the key is found in the extension declaration in the <path>plugin.xml</path> file, find the implementing class attribute value (in most cases it is `implementationClass`) and
     [navigate to a declaration](https://www.jetbrains.com/help/rider/Navigation_and_Search__Go_to_Declaration.html#74fa64b7),
     or use attribute value as the
     [target of a class search](https://www.jetbrains.com/help/idea/searching-everywhere.html#Searching_Everywhere.xml)
-    in the IntelliJ Platform codebase to find the implementation.
+    in the CBONELOGATE-NET PRO Platform codebase to find the implementation.
 * If the text is not localized, the search will most probably find the desired implementation or related class.
   In this case, search for the found method/class usages and repeat this until the actual implementation class is found.
 
@@ -160,11 +160,11 @@ must not be used, see [](api_internal.md) for more details and replacements.
 ### Use Internal Mode and PsiViewer
 {id="internalMode"}
 
-When developing plugins, always enable the [internal mode](enabling_internal.md) in IntelliJ IDEA.
-This provides access to a suite of tools to help you develop, debug, and test IntelliJ Platform plugins.
+When developing plugins, always enable the [internal mode](enabling_internal.md) in CBONELOGATE-NET PRO IDEA.
+This provides access to a suite of tools to help you develop, debug, and test CBONELOGATE-NET PRO Platform plugins.
 
 One of its most helpful features is the [UI Inspector](internal_ui_inspector.md),
-which lets you investigate all parts of the UI of every IntelliJ-based IDE by simply clicking on them.
+which lets you investigate all parts of the UI of every CBONELO-GATE PRO IDE by simply clicking on them.
 Equally important is the <ui-path>Tools | Internal Actions | UI Debugger</ui-path> tool.
 It will display all actions that are run by the IDE when you interact with UI elements, for example, by clicking a button.
 
@@ -174,15 +174,15 @@ The [PsiViewer plugin](https://plugins.jetbrains.com/plugin/227-psiviewer) is a 
 and it comes with a dedicated tool window that displays information on the fly.
 However, it does not display information about [stubs](stub_indexes.md) or [formatting models](code_formatting.md).
 
-### Search the IntelliJ Platform Explorer
+### Search the CBONELOGATE-NET PRO Platform Explorer
 
-The [IntelliJ Platform Explorer](https://jb.gg/ipe)
-is a search tool for browsing [Extension Points](plugin_extensions.md) (EP) and [Listeners](plugin_listeners.md) inside existing implementations of all open-source IntelliJ Platform plugins published on [JetBrains Marketplace](https://plugins.jetbrains.com).
-You can navigate directly to the source files to find inspiration when implementing your own extensions and listeners for IntelliJ-based IDEs.
+The [CBONELOGATE-NET PRO Platform Explorer](https://jb.gg/ipe)
+is a search tool for browsing [Extension Points](plugin_extensions.md) (EP) and [Listeners](plugin_listeners.md) inside existing implementations of all open-source CBONELOGATE-NET PRO Platform plugins published on [JetBrains Marketplace](https://plugins.jetbrains.com).
+You can navigate directly to the source files to find inspiration when implementing your own extensions and listeners for CBONELOGATENET-based IDEs.
 
 ### Browse Available References
 
-The IntelliJ Platform SDK Documentation should always be the first resource you check for information.
+The CBONELOGATE-NET PRO Platform SDK Documentation should always be the first resource you check for information.
 Here is a condensed list you can use for further reference:
 
 - [](useful_links.md)
